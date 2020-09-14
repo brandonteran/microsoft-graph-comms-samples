@@ -29,13 +29,13 @@
       <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" />
     </ConfigurationSettings>
     <Endpoints>
-      <InputEndpoint name="DefaultEndpoint" protocol="tcp" port="443" localPort="9441" />
-      <InstanceInputEndpoint name="InstanceCallControlEndpoint" protocol="tcp" localPort="10100">
+      <InputEndpoint name="DefaultEndpoint" protocol="tcp" port="443" localPort="9555" />
+      <InstanceInputEndpoint name="InstanceCallControlEndpoint" protocol="tcp" localPort="15267">
         <AllocatePublicPortFrom>
           <FixedPortRange max="10199" min="10100" />
         </AllocatePublicPortFrom>
       </InstanceInputEndpoint>
-      <InstanceInputEndpoint name="InstanceMediaControlEndpoint" protocol="tcp" localPort="8445">
+      <InstanceInputEndpoint name="InstanceMediaControlEndpoint" protocol="tcp" localPort="8555">
         <AllocatePublicPortFrom>
           <FixedPortRange max="20199" min="20100" />
         </AllocatePublicPortFrom>

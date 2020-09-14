@@ -1,0 +1,10 @@
+authtoken: 1fHit6PvUBRjoUQCcMYJllfWTFn_5parRuNFLqYpqwpuemBiW
+tunnels:
+  signaling:
+    addr: "https://localhost:9555"
+    proto: http
+    subdomain: bteran
+    host-header: localhost
+  media:
+    addr: 8555
+    proto: tcp

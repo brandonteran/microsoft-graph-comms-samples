@@ -30,7 +30,7 @@ Enter your Bot's Microsoft AppId as in the registation page.
 .PARAMETER AppSecret
 Enter your Bot's Microsoft AppPassword as in the registration page.
 
-.PARAMETER SignalingPort
+.PARAMETER SignalPort
 Enter your ngrok Signaling Port number.
 
 .PARAMETER MediaPort

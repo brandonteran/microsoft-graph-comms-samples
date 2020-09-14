@@ -41,6 +41,21 @@ namespace Sample.AudioVideoPlaybackBot.FrontEnd.Http
         /// <summary>
         /// The GET logs.
         /// </summary>
+        /// <returns>
+        /// The <see cref="Task" />.
+        /// </returns>
+        [HttpGet]
+        [Route(HttpRouteConstants.Test + "/")]
+        public HttpResponseMessage OnGetLogs()
+        {
+            var response = this.Request.CreateResponse(HttpStatusCode.OK);
+            response.Content = new StringContent("This is a test!", Encoding.UTF8, "text/plain");
+            return response;
+        }
+
+        /// <summary>
+        /// The GET logs.
+        /// </summary>
         /// <param name="skip">The skip.</param>
         /// <param name="take">The take.</param>
         /// <returns>

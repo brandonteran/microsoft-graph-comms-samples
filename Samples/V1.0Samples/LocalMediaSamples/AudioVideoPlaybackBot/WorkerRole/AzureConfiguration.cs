@@ -330,7 +330,7 @@ namespace Sample.AudioVideoPlaybackBot.WorkerRole
             }
 
             var tcpAddress = $"{this.ServiceDnsName.Substring(0, this.ServiceDnsName.IndexOf("."))}.tcp.ngrok.io:{this.TcpForwardingPort}";
-            var publicMediaUrl = new Uri(tcpAddress);
+            var publicMediaUrl = new Uri("tcp://" + tcpAddress);
             IPAddress publicInstanceIpAddress = RoleEnvironment.IsEmulated
                 ? Dns.GetHostEntry(publicMediaUrl.Host).AddressList[0]
                 : this.GetInstancePublicIpAddress(this.ServiceDnsName);
